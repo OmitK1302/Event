@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventNest: Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Assets/Images/EventNest-logos_white 1.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="logo_img"><img src="Images/EventNest-logos_white 1.png" alt=""></div>
+        <div class="container">
+            <div class="mainBox">
+                <div class="organiser show">
+    
+                    <div class="img"><img src="Images/StuSignUp.png" class="purpleImage" alt="an image of a student using her laptop"></div>
+    
+                    <div class="form">
+    
+                        <div class="input">
+
+                            <p class="signUpLabel">Student SignUp</p>
+
+                            <form action="/sign-up-Student" id="signupForm" method="POST">
+                                <div class="default">
+                                    <input type="text" placeholder="Name" name="name" class="inputBox name" id="name" required>
+                                    <div class="underline"></div>
+                                </div>
+    
+                                <div class="default">
+                                    <input type="email" placeholder="Email Address" name="email" class="inputBox email" id="email" required>
+                                    <div class="underline"></div>
+                                </div>
+
+                                <div class="default">
+                                    <input type="tel" pattern="[0-9]{10}" maxlength="10" placeholder="Phone Number" name="phone" class="inputBox phNum" id="phone" required>
+                                    <div class="underline"></div>
+                                </div>
+
+                                <div class="default">
+                                    <input type="password" placeholder="Password" name="password" class="inputBox pass" id="password" required>
+                                    <div class="underline"></div>
+                                    <span id="passwordWarning" style="color: red; font-size: 0.8rem;"></span>
+                                </div>
+
+                                <div class="default">
+                                    <input type="password" placeholder="Confirm Password" class="inputBox cnfPass" required>
+                                    <div class="underline"></div>
+                                </div>
+                                
+                                <input type="submit" name="Sign Up" id="signUp" value="Sign Up" class="default submit">
+    
+                                <div class="line"></div>
+    
+                                <div class="default other">
+                                    Or Sign Up with
+                                </div>
+    
+                                <div class="soc default">
+                                    <a href=""><div class="socDefault google"><img class="social-btn-icon" alt="Login with Google" src="https://hrcdn.net/fcore/assets/google-colored-20b8216731.svg"></div></a>
+                                    <a href=""><div class="socDefault github"><img class="social-btn-icon" alt="Login with Github" src="https://hrcdn.net/fcore/assets/github-colored-1db995054b.svg"></div></a>
+                                    <a href=""><div class="socDefault linkedin"><img class="social-btn-icon" alt="Login with LinkedIn" src="https://hrcdn.net/fcore/assets/linkedin-colored-1db195795c.svg"></div></a>
+                                    <a href=""><div class="socDefault facebook"><img class="social-btn-icon" alt="Login with Facebook" src="https://hrcdn.net/fcore/assets/facebook-colored-af4249157d.svg"></div></a>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function(e) {
+            // e.preventDefault();
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value;
+            var password = document.getElementById("password").value;
+
+            const details = {
+                name: name,
+                email: email,
+                phone: phone,
+                password: password
+            };
+            module.exports = details;
+            console.log(details);
+        });
+
+        document.getElementById("password").addEventListener("input", function(event) {
+            var password = event.target.value;
+            var passwordWarning = document.getElementById("passwordWarning");
+
+            if (password.length < 6) {
+                passwordWarning.textContent = "Password must be at least 6 characters long";
+            } else {
+                passwordWarning.textContent = "";
+            }
+        });
+    </script>
+</body>
+</html>

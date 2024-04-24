@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventNest: Event Registration</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="logo"><img class="imgLogo" src="../Assets/Images/EventNest-logos_white 1.png" alt="logo of EventNest"></div>
+
+        <div class="main">
+
+            <div class="mainContent">
+                
+                <div class="form">
+                    <h2 class="formHeading">Event Registration Form</h2>
+
+                    <form action="#">
+
+                        <div class="fNameDiv inputDiv">
+                            <div ><p class="label--fName inputDivLabel">First Name*: </p></div>
+                            <input type="text" name="firstName" class="input--firstName inputbox" required>
+                            <div class="underline"></div>
+                            
+                        </div>
+    
+                        <div class="lNameDiv inputDiv">
+                            <div ><p class="label--lName inputDivLabel">Last Name*: </p></div>
+                            <input type="text" name="lastName" class="input--lastName inputbox" required>
+                            <div class="underline"></div>
+                        </div>
+    
+                        <div class="mobDiv inputDiv">
+                            <div ><p class="label--mob inputDivLabel">Mobile*: </p></div>
+                            <input type="tel" pattern="[0-9]{10}" maxlength="10" name="mobile" class="input--mobile inputbox" required>
+                            <div class="underline"></div>
+                        </div>
+                        
+                        
+                        <div class="GenderDiv optionsDiv inputDiv">
+                            <p class="label--gender inputDivLabel choiceLabel">Gender*: </p>
+                            <div class="professionOptions">
+                                <div class="Option Option1">
+
+                                    <input type="radio" name="Gender" id="male" class="input--multiple-male input--multiple">
+                                    <label for="male"><div class="genOpt"><p>Male</p><img src="https://d8it4huxumps7.cloudfront.net/uploads/images/form-step/Male.svg"></div></label>
+        
+                                </div>
+
+                                <div class="Option Option2">
+                                    <input type="radio" name="Gender" id="female" class="input--multiple-female input--multiple">
+                                    <label for="female"><div class="genOpt"><p>Female</p><img src="https://d8it4huxumps7.cloudfront.net/uploads/images/form-step/Female.svg"></div></label>
+                                </div>
+
+                                <div class="Option Option3">
+                                    <input type="radio" name="Gender" id="genderOthers" class="input--multiple-genOthers input--multiple">
+                                    <label for="genderOthers"><div class="genOpt"><p>Others</p><img src="https://d8it4huxumps7.cloudfront.net/uploads/images/form-step/Others.svg"></div></label>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="professionDiv optionsDiv inputDiv">
+                            <p class="label--profession inputDivLabel choiceLabel">Profession: </p>
+                            <div class="professionOptions">
+                                <div class="Option Option1">
+
+                                    <input type="radio" name="Profession" id="clgStudent" class="input--multiple-clgStudent input--multiple">
+                                    <label for="clgStudent"><div>College Student</div></label>
+        
+                                </div>
+
+                                <div class="Option Option2">
+                                    <input type="radio" name="Profession" id="sclStudent" class="input--multiple-sclStudent input--multiple">
+                                    <label for="sclStudent"><div>School Student</div></label>
+                                </div>
+
+                                <div class="Option Option3">
+                                    <input type="radio" name="Profession" id="professional" class="input--multiple-professional input--multiple">
+                                    <label for="professional"><div>Professional</div></label>
+                                </div>
+                                
+                                <div class="Option Option4">
+                                    <input type="radio" name="Profession" id="others" class="input--multiple-others input--multiple">
+                                    <label for="others"><div>Others</div></label>
+
+                                </div>      
+                            </div>
+                            
+                        </div>
+    
+                        <div class="orgDiv inputDiv">
+
+                            <div ><p class="label--orgName inputDivLabel">Organization Name (Name, Location): </p></div>
+                            <input type="text" name="org" class="input--org inputbox" required>
+                            <div class="underline"></div>
+
+                        </div>
+    
+                        <div class="countryDiv inputDiv">
+                            <div ><p class="label--country inputDivLabel">Coutry of Residence*: </p></div>
+                            <input type="text" name="country" class="input--country inputbox" required>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="checkboxDiv inputDiv">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">I accept the <span class="tAndCmodal">terms and conditions.</span> </label>
+                        </div>
+                        <div class="Div inputDiv">
+    
+                        </div>
+
+                        <div class="submitDiv inputDiv"><input class="btn--submit" type="submit" value="Resiter"></div>
+
+                    </form>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="termsCond hidden">
+            <button class="close-modal">&times;</button>
+            <h1>Terms and Conditions...</h1>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li> 
+                <li>Earum suscipit reiciendis laudantium illo nulla, quam amet maiores asperiores illum quidem excepturi tempora, autem magnam corrupti rerum praesentium iusto ullam dolor!</li>
+                <li>Aut earum a optio adipisci architecto, natus debitis commodi est necessitatibus doloremque reprehenderit iusto unde voluptates incidunt iure, quia voluptate accusamus nesciunt fugit? </li>
+                <li>Ipsum vero, ut excepturi minus iusto perspiciatis!</li>
+                <li>Eaque ullam aperiam maiores, error praesentium ex dolorum dolore, nobis quaerat ut voluptates cum qui ab accusamus soluta quidem voluptatibus debitis! Corporis iusto facilis rem blanditiis dicta sint minus nobis.</li>
+                <li>Natus voluptatibus mollitia cum itaque inventore alias animi rerum amet? In blanditiis magnam placeat quo quidem inventore, beatae, id modi dolore debitis cumque nulla ut. Dolores qui praesentium ratione magni.</li>
+                <li>Aliquam asperiores sit et temporibus assumenda vitae enim voluptate quisquam, cupiditate aliquid aut dolor eius, voluptatibus ipsa sapiente accusantium minima dolores ut. Nihil ex laudantium sunt maiores quaerat cupiditate provident.</li>
+            </ul>
+        </div>
+        <div class="overlay hidden"></div>
+
+        <footer class="footer">
+            <div class="logo--footer">
+                <img src="../Assets/Images/EventNest-logos_white.png" alt="EventNest logo">
+
+                <p class="footer--text">Join the EventNest community today and unlock a world of endless opportunities, connections, and unforgettable experiences!</p>
+            </div>
+
+            <div class="copyright">
+                <p>© 2024 EventNext</p>
+            </div>
+
+
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

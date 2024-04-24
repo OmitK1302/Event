@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #b259bc;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #b259bc;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.img__select {
+    position: absolute;
+    height: 70rem;
+    left: 60%;
+    top: 14vh;
+    opacity: 0.8;
+    transition: all 0.5s ease 0s normal;
+
+}
+
+.img__student {
+    position: absolute;
+    height: 60rem;
+    width: 85rem;
+    left: 51%;
+    top: 17vh;
+    opacity: 0;
+    transition: all 0.5s ease 0s normal;
+}
+
+.img__organization {
+    position: absolute;
+    height: 55rem;
+    width: 85rem;
+    left: 50%;
+    top: 23%;
+    opacity: 0;
+    transition: all 0.5s ease 0s normal;
+}
+
+.first__half {
+    height: 100vh;
+    width: 70vw;
+    background-color:  #1c172b;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.back__head {
+    background-color: #506d84;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+}
+
+.back__head:hover {
+    background : linear-gradient(to left, rgb(128, 133, 174), rgb(48, 55, 109));
+}
+
+.back__head:active {
+    transform: translate(2px, 2px);
+}
+
+.bx-arrow-back {
+    font-size: x-large;
+}
+
+.q__container {
+    /* background-color: aquamarine; */
+    height: auto;
+    width: 60rem;
+    position: relative;
+    left: 15vh;
+}
+
+.q__logo {
+    /* background-color: #1c172b; */
+    height: 5rem;
+    width: 5rem;
+}
+
+.bxs-objects-horizontal-left {
+    color: white;
+    font-size: 5vh;
+}
+
+.question h3{
+    font-size: 4vh;
+    color: white;
+    margin-top: 5px;
+    word-spacing: 4px;
+}
+
+.gradient {
+    background: linear-gradient(to right, #6338b9,#3652AD, #E9F6FF);
+    background-clip: #dbdbdb;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.question p{
+    font-size: 1.5vh;
+    color: rgb(205, 197, 197);
+    margin-top: -25px;
+}
+
+.options {
+    /* background-color: blueviolet; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.option:last-child {
+    margin-top: 2vh;
+}
+
+.option {
+    background-color: #F9E8C9;
+    height: 12vh;
+    width: 95%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/* .option:hover {
+    border: 0.45vh solid #a85959;
+} */
+
+.option-active {
+    border: 0.45vh solid #ea6912;
+}
+
+.type {
+    height: 30%;
+    /* background-color: #506d84; */
+    display: flex;
+    align-items: center;
+}
+
+.bxs-graduation {
+    /* background-color: antiquewhite; */
+    font-size: 2.2rem;
+    height: 2.15rem;
+    margin: 0vh 2vh 0vh 1vh;
+    color: #393740;
+}
+
+.bxs-castle {
+    /* background-color: antiquewhite; */
+    font-size: 2.1rem;
+    height: 2.15rem;
+    margin: 0vh 2vh 0vh 1vh;
+    color: #393740;
+}
+
+.type h5{
+    font-size: 2.2rem;
+    color: rgb(40, 36, 36);
+    /* background-color: #957dda; */
+}
+
+.why {
+    /* background-color: #1c172b; */
+    height: auto;
+}
+
+.why p{
+    /* background-color: #c8c1db; */
+    font-size: 1.5rem;
+    margin-top: -10px;
+    margin: 0.5vh 0vh 0vh 5.5vh;
+    color: rgb(36, 33, 33);
+    font-weight: 600;
+}
+
+.buttons {
+    /* background-color: #fffcfc; */
+    height: auto;
+    width: 12.7rem;
+    position: relative;
+    left: 0.15vw;
+    top: 3vh;
+    border-radius: 20px;
+}
+
+.click:hover {
+    color: black;
+    /* background: linear-gradient(to right, #D04848, #6d48b7,#3652AD, #E9F6FF); */
+    background: linear-gradient(to left, rgb(65, 143, 65), rgb(42, 124, 42), rgb(11, 130, 11));
+    transform: translate(2px, 2px);
+    transform: scale(2 2);
+    letter-spacing: 0.4px;
+}
+
+.click {
+    background-color: rgb(63, 158, 63);
+    color: #000000;
+    height: 5.2rem;
+    width: 12.7rem;
+    margin-right: 3rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 13px;
+    outline: none;
+    border: 3px solid rgb(99, 166, 164);
+    cursor: pointer;
+}
+
+.buttons:active {
+    transform: translate(0.2vh, 0.2vh);
+}
+
+.second__half {
+    height: 100vh;
+    width: 30vw;
+    background-color: #272841;
+}
